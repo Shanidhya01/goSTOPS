@@ -18,18 +18,15 @@ function Header() {
   }, [])
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-[#919191] z-50 shadow h-[80px] flex items-center">
+    <header className="fixed top-0 left-0 w-full bg-[#919191] z-50 shadow h-[65px] flex items-center">
+      <img src='https://gostops.s3.amazonaws.com/static/src/img/gostops-logo.png' alt='GoStops Logo' className='h-16 mr-8' />
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-        <div className="flex items-center space-x-8">
-          <div className="text-3xl font-bold flex items-center space-x-1">
-            <span className="text-yellow-400">go</span>
-            <span className="text-pink-500">ST</span>
-            <span className="text-blue-500">O</span>
-            <span className="text-orange-500">P</span>
-            <span className="text-purple-500">S</span>
-          </div>
+        {/* Logo on the far left */}
+        {/* Navbar centered */}
+        <div className="flex-1 flex justify-center">
           <Navbar />
         </div>
+        {/* Buttons on the right */}
         <div className="flex items-center space-x-4">
           <button className="bg-white rounded-full flex items-center px-5 py-2 shadow text-gray-700 hover:text-gray-900 hover:bg-gray-100 transition">
             <Download className="w-5 h-5 mr-2" />
